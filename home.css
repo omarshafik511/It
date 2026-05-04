@@ -103,7 +103,7 @@ nav ul li a:hover {
 
 .ad{
     width:100%;
-    height:5vh;
+    height:15vh;
     overflow:hidden;/* Clips anything that doesn't fit */
 }
 .ad iframe{
