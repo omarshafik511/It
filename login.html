@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css">
+    <title>log in</title>
+</head>
+<body>
+    <div class="login-body">
+        <h1 class="text">your journey start here take the first step</h1>
+        
+        <form class="login" onsubmit=" return loginUser()">
+            <h2>log in</h2>
+            <div>
+                <label >email</label>
+                <input type="email" class="loginEmail" required>
+            </div>
+            <div>
+                <label >password</label>
+                <input type="password" class="loginPassword" required>
+            </div>
+            
+            <p id="error2" style="color:rgb(255, 0, 0);"></p>
+            
+            <button type="submit" class="button">log in</button>
+            
+            <div class="remember">
+                <input id="remember" type="checkbox"  >
+                <label for="remember">remember me</label>
+            </div>
+
+            
+            <p>Don't have an account? <a href="signup.html" class="link">signup</a> </p>
+        </form>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

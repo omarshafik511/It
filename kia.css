@@ -1,0 +1,128 @@
+nav{
+    background-color:white;
+    padding:0.5rem 2%;
+    /* rem for all with diff size */
+    border-bottom:2px solid #9A0000;
+}
+.site_title{
+    color:black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    text-decoration: none; /*to remove underline */
+}
+nav ul{
+    display:flex;
+    list-style:none;/*to remove dots*/
+    align-items:center;
+    gap:20px;
+    padding :0px;
+    margin:0px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 15px; 
+    display: inline-block;
+    background-color: transparent;
+}
+nav ul li a:hover {
+    color: white; 
+    background-color: black; 
+    border-radius: 10px;
+}
+.active {
+  
+    border-bottom: 3px solid #9A0000;
+    padding-bottom: 1px;
+}
+footer{
+    background-color: #1a1a1a;
+    color:white;
+    padding:30px 10px;
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.box{
+    text-align:center;
+    flex:1;
+    margin:5px;
+}
+
+.box h3{
+    color:#9A0000;
+    margin-bottom:5px;
+}
+.box p{
+    margin:2px 0;
+    color:#bbb;
+}
+.cpy{
+    width:100%;
+    color:#bbb;
+}
+
+.hero-section {
+    display: flex;
+    height: calc(100vh - 80px - 60px); 
+    width: 100%;
+    background-color: #0a0a0a; 
+    color: white;
+    overflow: hidden;
+}
+
+.main-display {
+    flex: 3; 
+    background-image: url("kia.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end; 
+    padding: 40px;
+}
+.side-gallery {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding: 10px;
+}
+
+.thumb {
+    flex: 1; 
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+@media(max-width: 600px){
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+    .site_title{
+        font-size: 1.8rem;
+        margin-bottom:10px;
+    }
+    #darkmode{
+        width:100%;
+        padding:12px;
+    }
+}
+@media(min-width: 601px)
+{
+    nav ul{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sign Up</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body class="signup-body">
+
+     <div class="container">
+        <div class="left">
+            <img src="e:\test\login\signup .jpg.jpeg" alt="">
+        </div>
+        <form class="signup" onsubmit="return confirmpass()" >
+
+            <h2>sign up</h2>
+            <p class="text2">if you have an accunt go to <a href="login.html"> log in</a></p>
+            <div>
+                <label>frist name </label>
+                <input type="text" required placeholder="Enter Your frist name">
+            </div>
+            <div>
+                <label>last name</label>
+                <input type="text" required placeholder="Enter Your last name">
+            </div>
+            <div>
+                <label >email</label>
+                <input type="email" class="email" required placeholder="Enter your email">
+            </div>
+            <div>
+                <label>password</label>
+                <input type="password" class="pass" required placeholder="Enter your password" >
+            </div>
+            <div>
+                <label>confirm password</label>
+                    <input type="password" class="confirm" required placeholder="Confirm Your password">
+            </div>
+            <p id="error" style="color:red;"></p>
+            <div>
+                 <button type="submit" class="button" >Creat Account</button>
+            </div>
+        </form>
+     </div>
+  
+<script src="project.js"></script>
+</body>
+</html>

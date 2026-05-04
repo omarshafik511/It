@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Dealerships</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style_dark.css">
+
+</head>
+
+<body>
+    <nav>
+            <ul>
+                <a href="index.html" class="site_title">Cars Dealership</a>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="Nada.html">New</a></li>
+                <li><a href="usedcars.html">Used</a></li>
+                <li><a href="checkout.html" class="active">Checkout</a></li>
+                <li><a href="helpcenter.html">Help center</a></li>
+                <li><a href="faq.html" >FQA</a></li>
+                <li><a href="about-us.html" >About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><button id="darkmode" style="cursor:pointer">Switch Theme</button></li>
+            </ul>
+        </nav>
+
+        <p class="tit"> <b>Reserve Your Car</b></p>
+        
+        
+            <div class="name" >
+                
+                <form>
+                <label> Name:</label>
+                <input type="username" required placeholder="Enter Your Name" >
+            </div>
+        
+        
+            <div class="adress">
+                <label> Adress:</label>
+                <input type="text" required placeholder="Enter Your Adress" >
+                </form>
+            </div>
+    
+    <br>        
+        
+            <div class="number">
+                <form>
+                    <label> number telephone</label>
+                <input type="number" required placeholder="Enter Your Number">
+            </div>
+        
+            <div>
+                    <label> alternative number</label>
+                <input type="alternative number" required placeholder="Enter Your Number">
+                </form>
+            </div>
+        
+    <br>
+        
+            <div class="email">
+                <form>
+                <label>enter your email</label>
+                <input type="email" required placeholder="Enter Your Email">
+                </form>
+            </div>
+        
+    <br>
+<div class="type-of-car1">
+    <p><b>Select Your Car (Used or New)</b></p>
+    <input type="radio" value="Used" name="car_status" id="used_radio">
+    <label for="used_radio">Used Cars:</label>
+    <select name="used_car_model">
+        <option value="1">Kia Cerato 2021</option>
+        <option value="2">Hyundai Elantra 2020</option>
+        <option value="3">Toyota Corolla 2021</option>
+        <option value="4">Nissan Sunny 2021</option>
+    </select>
+</div>
+
+<div class="type-of-car2">
+    <input type="radio" value="New" name="car_status" id="new_radio">
+    <label for="new_radio">New Cars:</label>
+    <select name="new_car_model">
+        <option value="1">Audi RS7 Sportback</option>
+        <option value="2">Honda Civic Type-R</option>
+        <option value="3">Cadillac Escalade-V ESV</option>
+        <option value="4">Nissan GT-R R35</option>
+    </select>
+</div>
+            
+            <div class="color">
+                <form>
+                    <label>Color</label>
+                    <select name="color">
+                        <optgroup>
+                            <option value="1">Red</option>
+                            <option value="2">Titanium Silver</option>
+                            <option value="3">Metalic Black</option>
+                            <option value="4">pearl white</option>
+                            <option value="5">Metalic gold</option>
+                        </optgroup>
+                    </select>
+                </form>
+
+
+                        <div class="cc">
+                    <label>CC</label>
+                        <input type="number" value="2000" min="1400" max="3000" step="200" name="cc">
+                
+            </div>
+
+                        <div class="category">
+                    <label>Category</label>
+                        <input type="number" value="7" min="1" max="7" step="1" name="category">
+            </div>
+                
+            <div class="receip day">
+                <form>
+                    <label>Receip Day</label>
+                    <input type="date" required>
+
+                </form>
+
+            <div class="submit">
+                <form>
+                <input type="submit">
+                </form>
+            <div>
+
+        <footer>
+            <div class="box">
+                <h3>Cars Dealership</h3>
+                <p>Quality vehicles you can trust.</p>
+            </div>
+            <div class="box">
+                <h3>Contact</h3>
+                <p>Cairo, Egypt</p>
+                <p>+20 893 349 4390</p>
+            </div>
+            <div class="cpy">
+                <p>&copy; 2026 Cars Dealership</p>
+            </div>
+        </footer>
+        <script src="theme.js"></script>
+
+<script>
+    const submitBtn = document.querySelector('input[type="submit"]');
+
+    if (submitBtn) {
+        submitBtn.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            const requiredInputs = document.querySelectorAll('input[required], select[required]');
+            let allValid = true;
+            requiredInputs.forEach(input => {
+                if (!input.value.trim()) {
+                    allValid = false;
+                    
+                    input.style.border = "2px solid red";
+                } else {
+                    input.style.border = ""; 
+                }
+            });
+
+            if (allValid) {
+                alert("we are working on it");
+                window.location.href = "checkout2.html";
+            } else {
+                alert("Fill all the form please");
+            }
+        });
+    }
+</script>

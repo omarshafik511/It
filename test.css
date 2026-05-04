@@ -1,0 +1,143 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.login-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: center; 
+    height: 100vh;
+    background-image: url(login.png);
+    background-size: cover;
+    gap: 50px;
+    
+}
+.text{
+    color: aliceblue;
+    font-size: 28px;
+    max-width: 400px; 
+    line-height: 1.4;
+}
+
+.login{
+    background:  rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    width: 400px;
+    padding: 30px;
+    margin: 100px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.login > div{
+    margin: 15px 0;
+    text-align: left;
+    
+}
+ 
+.login input {
+   background: rgba(255,255,255,0.1);
+    width: 100%;
+    padding: 9px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+}  
+
+.login:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.button{
+    width: 100%;
+    padding: 9px;
+    margin-top: 10px;
+    border:none ;
+    border-radius: 10px;
+    background: crimson;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.button:hover{
+   background: darkred;
+}
+.remember{
+    display: flex;
+    gap: 8px;
+
+}
+
+.remember input {
+    width: auto;
+}
+
+.link{
+    display: block;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+.link:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+/* ////////////////////////////////////////////// */
+.container {
+    text-transform: capitalize;
+    display: flex;
+    width: 900px;
+    margin: 50px auto;
+    background: rgb(255, 255, 255);
+    border-radius: 20px ;
+    box-shadow:  0 10px 25px rgba(0,0,0,0.5);   
+}
+
+.left {
+    width: 40%;
+    margin: 15px;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px ;
+  
+}
+
+.signup {
+    background: white;
+    color:black;
+    width:60% ;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.text2{
+    margin-top: 10px;
+}
+
+.signup div {
+    margin: 15px 0;
+
+}
+
+.signup input {
+    background: rgba(255,255,255,);
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
+}
+.signup>p > a {
+    text-decoration: none;
+}

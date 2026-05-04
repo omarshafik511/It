@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+nav {
+  background-color: white;
+  padding: 0.5rem 2%;
+  border-bottom: 2px solid #9a0000;
+}
+.site_title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: transparent;
+}
+nav ul li a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+.active {
+  border-bottom: 3px solid #9a0000;
+  padding-bottom: 1px;
+}
+
+.intro {
+  text-align: center;
+  padding: 30px 20px;
+}
+.intro h2 {
+  color: #9a0000;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.intro p {
+  color: black;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.container {
+  padding: 40px 60px 90px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.car {
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(154, 0, 0, 0.08);
+  transition: 0.4s;
+}
+
+.car:hover {
+  transform: translateY(-10px);
+  border-color: #9a0000;
+  box-shadow: 0 18px 40px rgba(154, 0, 0, 0.15);
+}
+
+.car img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.car h3 {
+  margin: 22px 20px 10px;
+  font-size: 1.3rem;
+  color: #9a0000;
+}
+
+.price {
+  margin: 10px 20px;
+  color: #444;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px;
+  padding: 12px 28px;
+  background: #9a0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #7f0000;
+  transform: scale(1.05);
+}
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  text-align: center;
+  flex: 1; 
+  margin: 5px;
+}
+
+.box h3 {
+  color: #9a0000;
+  margin-bottom: 5px;
+}
+.box p {
+  margin: 2px 0;
+  color: #bbb;
+}
+.cpy {
+  width: 100%;
+  color: #bbb;
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .site_title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .container {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,125 @@
+/* body.dark means apply when body is on dark mode and js do it */
+body.dark{
+    background-color:#121212;
+    color : #e0e0e0;
+    padding-left : 200px;
+    box-sizing: border-box;
+}
+body.dark nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height : 100vh;
+    width:200px;
+    background-color:#1e1e1e;
+    border-bottom: none;
+    border-right: 2px solid #9A0000;
+    padding:1.5rem 1rem;
+    box-sizing: border-box;
+    z-index: 1000;
+    overflow-y: auto;
+}
+body.dark nav ul{
+flex-direction:column;
+/* flex start to left */
+align-items:flex-start;
+gap: 10px;
+}
+body.dark .site_title{
+    color: #e0e0e0; 
+}
+body.dark nav ul a{
+    color: #e0e0e0; 
+}
+
+
+body.dark h1{
+    color: #ff4d4d; 
+}
+body.dark h2{
+    color: #ff4d4d; 
+}
+body.dark p{
+    color: #ccc;
+}
+body.dark li{
+    color: #ccc;
+}
+
+/* home */
+body.dark .intro h2{
+    color:#ff4d4d;;
+}
+body.dark .intro p{
+    color: #ccc;
+}
+body.dark .card{
+    background-color:#1e1e1e;
+    color:#e0e0e0
+}
+body.card .card p{
+color:#aaa;
+}
+body.card .card a{
+color:#ff6666;
+}
+body.dark .reviews {
+    background-color: #0d0d0d;
+}
+body.dark .review-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+body.dark .user{
+    color:#ff6666;;
+}
+body.dark .reviews h2{
+    color:#ff4d4d;;
+}
+
+
+body.dark .hero{
+    background: linear-gradient(to right,#5a0000, #2a0000);
+}
+body.dark .hero input{
+    background:#2a2a2a;
+    color:#e0e0e0;
+    border: 1px solid #555;
+}
+body.dark .hero-section{
+    background-color:#0a0a0a;
+}
+
+body.dark .cta{
+    background-color:#1a1a1a;
+}
+body.dark .cta p{
+    background-color:#aaa;
+}
+
+body.dark .about, body.dark .faq{
+    background-color:#1e1e1e;
+    border-color:#9A0000;
+    color:#e0e0e0;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+}
+body.dark .faq h3{
+    background-color:#1e1e1e;
+    color:#ff4d4d;
+}
+body.dark .faq p{
+    border-bottom-color:#9A0000;
+}
+body.dark textarea{
+    background-color:#2a2a2a;
+    color:#e0e0e0;
+    border-color:#9A0000;
+}
+
+
+body.dark footer{
+    background-color:#0d0d0d;
+    border-top:2px solid #5a0000;
+}
